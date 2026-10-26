@@ -199,8 +199,6 @@ def load_notebook_model(notebook_path):
         source = "".join(cells[cell_index].get("source", []))
         exec(compile(source, f"weather.ipynb cell {cell_index}", "exec"), namespace)
 
-    # Reuse the exact predict_comfort and baseline_comfort function definitions
-    # from the notebook, without running its example predictions or experiments.
     for cell_index in (6, 9):
         source = "".join(cells[cell_index].get("source", []))
         tree = ast.parse(source)

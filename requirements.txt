@@ -1,3 +1,4 @@
+
 streamlit
 numpy
 pandas
@@ -5,3 +6,4 @@ matplotlib
 seaborn
 scipy
 scikit-fuzzy
+networkx
